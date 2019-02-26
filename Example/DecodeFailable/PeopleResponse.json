@@ -1,0 +1,42 @@
+{
+    "people": [
+        {
+            "id": "asd2fdsf",
+            "first_name": "George",
+            "last_name": "Marmaridis",
+            "age": "30",
+            "married": false,
+            "__comment": "age should not be a string"
+        },
+        {
+            "id": 12343,
+            "first_name": "John",
+            "last_name": "Doe",
+            "age": 27,
+            "married": true,
+            "__comment": "id should not be an int"
+        },
+        {
+            "id": "asd234fd",
+            "first_name": "Jane",
+            "last_name": "Doe",
+            "age": 24,
+            "married": true
+        },
+        {
+            "id": "a234fdsf",
+            "first_name": "John",
+            "last_name": "Johnson",
+            "age": 43,
+            "married": true
+        },
+        {
+            "id": "d234fdsf",
+            "first_name": "Bruce",
+            "last_name": "Willis",
+            "age": 50,
+            "married": 1,
+            "__comment": "married should not be an int"
+        }
+    ]
+}

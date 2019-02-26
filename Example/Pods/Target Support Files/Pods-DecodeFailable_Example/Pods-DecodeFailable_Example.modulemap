@@ -1,0 +1,6 @@
+framework module Pods_DecodeFailable_Example {
+  umbrella header "Pods-DecodeFailable_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

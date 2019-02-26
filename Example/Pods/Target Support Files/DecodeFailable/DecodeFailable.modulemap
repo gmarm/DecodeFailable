@@ -1,0 +1,6 @@
+framework module DecodeFailable {
+  umbrella header "DecodeFailable-umbrella.h"
+
+  export *
+  module * { export * }
+}

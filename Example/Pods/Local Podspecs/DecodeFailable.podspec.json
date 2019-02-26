@@ -1,0 +1,22 @@
+{
+  "name": "DecodeFailable",
+  "version": "0.1.0",
+  "summary": "A short description of DecodeFailable.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/George Marmaridis/DecodeFailable",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "George Marmaridis": "gmarmas@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/George Marmaridis/DecodeFailable.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "DecodeFailable/Classes/**/*"
+}

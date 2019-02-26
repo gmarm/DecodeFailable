@@ -1,0 +1,27 @@
+PODS:
+  - DecodeFailable (0.1.0)
+  - Nimble (7.3.1)
+  - Quick (1.3.2)
+
+DEPENDENCIES:
+  - DecodeFailable (from `../`)
+  - Nimble (~> 7.3.1)
+  - Quick (~> 1.3.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  DecodeFailable:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DecodeFailable: f178b1ecefd679b2bbefdbc52cba236c3e5fd8d4
+  Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
+  Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
+
+PODFILE CHECKSUM: 7a08062e0122fade81f31c94f5ffb82d18a0f545
+
+COCOAPODS: 1.5.3
