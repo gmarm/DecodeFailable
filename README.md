@@ -1,6 +1,6 @@
 # DecodeFailable
 
-[![CI Status](https://img.shields.io/travis/George Marmaridis/DecodeFailable.svg?style=flat)](https://travis-ci.org/George Marmaridis/DecodeFailable)
+[![CI Status](https://img.shields.io/travis/George Marmaridis/DecodeFailable.svg?style=flat)](https://travis-ci.org/gmarm/DecodeFailable)
 [![Version](https://img.shields.io/cocoapods/v/DecodeFailable.svg?style=flat)](https://cocoapods.org/pods/DecodeFailable)
 [![License](https://img.shields.io/cocoapods/l/DecodeFailable.svg?style=flat)](https://cocoapods.org/pods/DecodeFailable)
 [![Platform](https://img.shields.io/cocoapods/p/DecodeFailable.svg?style=flat)](https://cocoapods.org/pods/DecodeFailable)
