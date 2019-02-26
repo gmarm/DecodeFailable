@@ -10,9 +10,9 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-`DecodeFailable` provides a custom `Decodable` collection that decoding for individual elements can fail silently for.
-Thus, malformed or unknown elements in a JSON array won't result in a failure of the entire mapping. It also makes it easy
-to log any decoding failures.
+DecodeFailable provides a custom `Decodable` collection that decoding for individual elements can fail silently for.
+Thus, malformed or unknown elements in a JSON array won't result in a failure of the entire decoding. It also makes it
+easy to log or add custom handling of decoding errors for those elements.
                        DESC
 
   s.homepage         = 'https://github.com/gmarm/DecodeFailable'
