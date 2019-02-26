@@ -24,4 +24,5 @@ easy to log or add custom handling of decoding errors for those elements.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'DecodeFailable/Classes/**/*'
+  s.swift_version = '4.2'
 end
