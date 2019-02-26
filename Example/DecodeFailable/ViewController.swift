@@ -7,42 +7,33 @@
 //
 
 import UIKit
+import DecodeFailable
 
 class ViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // DecodeFailable Options
+        DecodeFailableOptions.logsErrors = true
+        DecodeFailableOptions.errorClosure = {
+            print("You may track your error here")
+        }
+        
+        // Mapping
+        do {
+            let getPeopleResponse = try decoder.decode(GetPeopleResponse.self,
+                                                       from: peopleResponseData)
+            print(getPeopleResponse)
+        } catch(let error) {
+            print(error)
+        }
+    }
+    
+    // MARK: Helpers
     lazy var peopleResponseData: Data = {
         let path = Bundle.main.path(forResource: "PeopleResponse", ofType: "json")!
         return try! Data(contentsOf: URL(fileURLWithPath: path), options: [])
     }()
     let decoder = JSONDecoder()
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-       // loadPeopleResponseJSON()
-        
-        do {
-            let getPeopleResponse = try decoder.decode(GetPeopleResponse.self, from: peopleResponseData)
-            print(getPeopleResponse)
-        } catch(let error) {
-            print(error)
-        }
-        
-    }
-    
-//    func loadPeopleResponseJSON() {
-//        let path = Bundle.main.path(forResource: "PeopleResponse", ofType: "json")!
-//        do {
-//            let data = try Data(contentsOf: URL(fileURLWithPath: path), options: [])
-//            let jsonResult = try JSONSerialization.jsonObject(with: data, options: [])
-//            print(jsonResult)
-//            if let jsonResult = jsonResult as? Dictionary<String, AnyObject>, let person = jsonResult["person"] as? [Any] {
-//                // do stuff
-//            }
-//        } catch {
-//            // handle error
-//        }
-//
-//    }
 }
 

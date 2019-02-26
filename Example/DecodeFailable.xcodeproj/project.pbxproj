@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E7D1C2922255F3200E7A8E7 /* PeopleResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 5EDC7DF421F0F56D00F2AA94 /* PeopleResponse.json */; };
+		5E7D1C2A22255FF700E7A8E7 /* GetPeopleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDC7DF121F0EFE900F2AA94 /* GetPeopleResponse.swift */; };
 		5EDC7DF221F0EFE900F2AA94 /* GetPeopleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDC7DF121F0EFE900F2AA94 /* GetPeopleResponse.swift */; };
 		5EDC7DF521F0F56E00F2AA94 /* PeopleResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 5EDC7DF421F0F56D00F2AA94 /* PeopleResponse.json */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -14,7 +16,7 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		607FACEC1AFB9204008FA782 /* DecodeFailableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* DecodeFailableTests.swift */; };
 		8D48492D96B1BA03421D4089 /* Pods_DecodeFailable_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD4BE76EC1663AC0A0DE8E53 /* Pods_DecodeFailable_Tests.framework */; };
 		9704B5F73BED8455B792BE3E /* Pods_DecodeFailable_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973584C402CCB08E90D0D428 /* Pods_DecodeFailable_Example.framework */; };
 /* End PBXBuildFile section */
@@ -44,7 +46,7 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* DecodeFailable_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecodeFailable_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* DecodeFailableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeFailableTests.swift; sourceTree = "<group>"; };
 		646A8CAE277B6416D93270BB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		87518AC939AC959D5083A39A /* Pods-DecodeFailable_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DecodeFailable_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DecodeFailable_Tests/Pods-DecodeFailable_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		935CD9FD8B841D6B59A8BB07 /* Pods-DecodeFailable_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DecodeFailable_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DecodeFailable_Example/Pods-DecodeFailable_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,12 +94,12 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		5EDC7DF321F0F54300F2AA94 /* Helpers */ = {
+		5EDC7DF321F0F54300F2AA94 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
 				5EDC7DF421F0F56D00F2AA94 /* PeopleResponse.json */,
 			);
-			name = Helpers;
+			name = JSON;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
@@ -124,11 +126,11 @@
 		607FACD21AFB9204008FA782 /* Example for DecodeFailable */ = {
 			isa = PBXGroup;
 			children = (
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				5EDC7DF021F0EFD800F2AA94 /* Model */,
-				5EDC7DF321F0F54300F2AA94 /* Helpers */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				5EDC7DF321F0F54300F2AA94 /* JSON */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -148,7 +150,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				607FACEB1AFB9204008FA782 /* DecodeFailableTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -279,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E7D1C2922255F3200E7A8E7 /* PeopleResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,7 +395,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				5E7D1C2A22255FF700E7A8E7 /* GetPeopleResponse.swift in Sources */,
+				607FACEC1AFB9204008FA782 /* DecodeFailableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

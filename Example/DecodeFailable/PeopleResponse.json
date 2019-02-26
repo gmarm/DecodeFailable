@@ -37,6 +37,13 @@
             "age": 50,
             "married": 1,
             "__comment": "married should not be an int"
+        },
+        {
+            "first_name": "Bruce",
+            "last_name": "Willis",
+            "age": 50,
+            "married": 1,
+            "__comment": "id is missing"
         }
     ]
 }

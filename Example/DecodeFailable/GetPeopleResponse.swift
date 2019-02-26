@@ -9,11 +9,10 @@
 import Foundation
 import DecodeFailable
 
-struct GetPeopleResponse: Decodable {
+struct GetPeopleResponse: Codable {
     private enum CodingKeys: String, CodingKey {
         case people
     }
-    //let people: [Person]
     let people: [Person]
     
     public init(from decoder: Decoder) throws {

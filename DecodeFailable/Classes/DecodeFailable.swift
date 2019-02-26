@@ -10,10 +10,10 @@ import Foundation
 
 /// Options for customizing `DecodeFailable`'s behavior.
 public final class DecodeFailableOptions {
-    /// Whether decoding problems are logged to the console.
+    /// Whether decoding errors are logged to the console. Defaults to `false`.
     public static var logsErrors: Bool = false
     
-    /// A closure to be called when a decoding error occurs.
+    /// An optional closure to be called when a decoding error occurs.
     public static var errorClosure: (() -> Void)? = nil
 }
 
