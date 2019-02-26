@@ -1,15 +1,7 @@
-#
-# Be sure to run `pod lib lint DecodeFailable.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'DecodeFailable'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of DecodeFailable.'
+  s.version          = '1.0'
+  s.summary          = 'Allows decoding to fail for individual elements in arrays using Codable'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +10,18 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+`DecodeFailable` provides a custom `Decodable` collection that decoding for individual elements can fail silently for.
+Thus, malformed or unknown elements in a JSON array won't result in a failure of the entire mapping. It also makes it easy
+to log any decoding failures.
                        DESC
 
-  s.homepage         = 'https://github.com/George Marmaridis/DecodeFailable'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/gmarm/DecodeFailable'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'George Marmaridis' => 'gmarmas@gmail.com' }
-  s.source           = { :git => 'https://github.com/George Marmaridis/DecodeFailable.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/gmarm/DecodeFailable.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/gmarmas'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'DecodeFailable/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'DecodeFailable' => ['DecodeFailable/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

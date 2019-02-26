@@ -58,7 +58,7 @@ class DecodeFailableTests: QuickSpec {
                 var closureCalledCount = 0
                 
                 beforeEach {
-                    DecodeFailableOptions.errorClosure = {
+                    DecodeFailableOptions.errorClosure = { _ in
                         closureCalledCount += 1
                     }
                     do {

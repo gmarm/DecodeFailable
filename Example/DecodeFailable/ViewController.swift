@@ -15,8 +15,9 @@ class ViewController: UIViewController {
         
         // DecodeFailable Options
         DecodeFailableOptions.logsErrors = true
-        DecodeFailableOptions.errorClosure = {
-            print("You may track your error here")
+        DecodeFailableOptions.errorClosure = { error in
+            print("You may track the error here")
+            print(error)
         }
         
         // Mapping

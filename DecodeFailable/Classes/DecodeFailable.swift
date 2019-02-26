@@ -14,7 +14,7 @@ public final class DecodeFailableOptions {
     public static var logsErrors: Bool = false
     
     /// An optional closure to be called when a decoding error occurs.
-    public static var errorClosure: (() -> Void)? = nil
+    public static var errorClosure: ((Error) -> Void)? = nil
 }
 
 /// A value that decoding can fail silently for.
@@ -31,7 +31,7 @@ public struct DecodeFailableValue<Value: Decodable>: Decodable {
                 print("\n\nError while decoding \(Value.self)")
                 print(error)
             }
-            DecodeFailableOptions.errorClosure?()
+            DecodeFailableOptions.errorClosure?(error)
         }
     }
 }
